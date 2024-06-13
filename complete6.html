@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content= "width=device-width, user-scalable=no">
-  <title>Task 1</title>
+  <title>Task 6</title>
   <style>
     body {
       margin: 0;
@@ -86,7 +86,7 @@
 </head>
 <body>
   <div class="center">
-    <h1>Task Code</h1>
+    <h1>Task - 6</h1>
     <h1 id="header">Processing</h1>
     <p>Paste the above code in the box and click submit to complete the task</p>
     <button id="copyButton">Copy Code</button>
@@ -111,7 +111,7 @@
     const db = getDatabase(app);
 
     function readData() {
-      const userRef = ref(db, 'Tasks/1/code');
+      const userRef = ref(db, 'Tasks/6/code');
 
       get(userRef).then((snapshot) => {
         if (snapshot.exists()) {
