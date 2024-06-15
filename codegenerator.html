@@ -118,9 +118,8 @@
 
          filter: hue-rotate(0deg); 
 
+       }
        } 
-
-     } 
   
         input[type="text"] {
             width: calc(100% - 32px); /* Adjust for padding and border */
@@ -201,6 +200,7 @@
         <button onclick="convertToAlphabet()">Generate</button>
         <p class="result hidden" id="indicator"> Verification Code <h1 id="result" class="result hidden"></h1></p>
         <button id="copyButton" class="result hidden">Copy Code</button>
+        <p id="message" style="display: none;">Copy Successfully</p>
       </div>
       
     </div>
@@ -227,15 +227,27 @@
             document.querySelector('button').classList.add('hidden');
         }
           }
+       function convertToAlphabetString(numberString) {
+            const key1 = '@#~%#%&^*^*^@*^*$^*$^&$^$^';
+            const key2 = 'VKBOHWUTUHNSPYYMMBPNNWPGNW';
+            const key3 = '<>?:"{}|<>?<>:<"{<}#%^{}$';
+            const key4 = '#%^&$^*()GHFD$##^#&#&#';
+            const key5 = 'SGR^W^*(RJHE%U57DT35436uT)';
+            const key6 = 'vSPIWRON2483ONsg%EGAEA';
+            const key7 = 'EWsfon459825-2[].].rg';
+            const key8 = '2082jnspijsrg#%@$^';
+            const key9 = 'snfdiospdgbspribgpsgpsweo';
+            const key10 = '3=42-35=24514=-5013=-602=1';
+            
+            let keys = [key1,key2,key3,key4,key5,key6,key7,key8,key9,key10];
 
-        function convertToAlphabetString(numberString) {
-            const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
             let result = '';
 
             for (const char of numberString) {
                 if (char >= '0' && char <= '9') {
+                    let n =parseInt( numberString.charAt(numberString.length-1));
                     const index = parseInt(char); // Convert digit to 0-based index
-                    result += alphabet.charAt(index);
+                    result += keys[n].charAt(index);
                 } else {
                     result += char; // Keep non-digit characters unchanged
                 }
@@ -243,16 +255,26 @@
 
             return result;
         }
+        function showMessage() {
+    var text = document.getElementById('message');
+    text.style.display = 'block';
+
+    setTimeout(function() {
+        text.style.display = 'none';
+    }, 1500);
+}
   
   document.getElementById("copyButton").addEventListener("click", function() {
       const code = document.getElementById("result").innerText;
       navigator.clipboard.writeText(code).then(() => {
+          showMessage();
       }).catch((error) => {
         console.error("Error copying text:", error);
       });
     });
   function hide(){
- document.getElementById("error").style.top=-35+"px";  
+ document.getElementById("error").style.top=-35+"px"; 
+  
   }
     </script>
 </body>
