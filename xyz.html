@@ -139,10 +139,85 @@ h1 {
     justify-content:center;
     align-items:center;
   }
-  
+  .load{
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #282c34;
+            z-index:100000;
+            position:fixed;
+           top:0;
+           left:0;
+           width:100%;
+        }
+
+        .loader {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            animation: rotate 2s linear infinite;
+        }
+
+        .loader::before, .loader::after {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 10px solid transparent;
+        }
+
+        .loader::before {
+            border-top-color: #61dafb;
+            animation: spinBefore 1.5s linear infinite;
+        }
+
+        .loader::after {
+            border-bottom-color: #21a1f1;
+            animation: spinAfter 1.5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinBefore {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinAfter {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+  .check{
+    margin-left:20px;
+    font-family:serif;
+    font-size:25px;
+  }
   </style>
 </head>
 <body>
+  <div class="load" id="loading">
+    <div class="loader"></div>
+    <h1 class="check">Checking</h1>
+  </div>
     <div class="container">
       <div class="nav"><label>Fast Earning</label></div>
       <div class="dialog">
@@ -163,5 +238,18 @@ h1 {
             <div class="confetti-piece"></div>
         </div>
     </div>
+  
+  <script>
+  var load= document.getElementById("loading");
+  function hide(){
+    load.style.display="none";
+  }
+  const min = 1000;
+const max = 5000;
+const time = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  
+  setTimeout(hide,time);
+  </script>
 </body>
 </html>
