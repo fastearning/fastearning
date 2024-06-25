@@ -81,7 +81,7 @@ section h2 {
     color: #ff5733;
 }
 
-a{
+.btn{
     padding: 1em 2em;
     background-color: #28a745;
     color: white;
@@ -92,7 +92,7 @@ a{
     text-decoration:none;
 }
 
-a:hover {
+.btn:hover {
     background-color: #218838;
     transform: scale(1.05);
 }
