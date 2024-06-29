@@ -1,248 +1,232 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    color: #333;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'sans-serif';
+}
+#container{
+  height:98vh;
+  width:100%;
+  background:#011e2c;
+  padding-top:400px;
+}
+.nav{
+  height: 100px;
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background:#012529;
+  position:fixed;
+  z-index:2;
+  top:0;
+  left:0;
+}
+.logo{
+  height:75px;
+  width:75px;
+}
+.apklogo{
+  height:350px;
+  width:350px;
+}
+#image{
+  height: 75px;
+  width:35%;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  background:transparent;
+  margin-left:7px;
+}
+#image span{
+  font-size:30px;
+  color:white;
+  height:25px;
+  line-height: 30px;
+  
 }
 
-nav {
-    background-color: #ff5733;
-    color: #fff;
-    padding: 0.5em 1em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+.nav .links{
+  height:75px;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  margin-right:20px;
+}
+ul{
+   height:75px;
+  width:100%;
+  background:transparent;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  list-style: none;
+}
+ul li a{
+  color:white;
+  margin-left:15px;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+  cursor:pointer;
+  font-family:"Times New Roman";
+  position:relative;
+  text-align:center;
+}
+ul li a::before{
+  content:" ";
+  background:#16C95F;
+  height:3px;
+  width:0;
+  position:absolute;
+  bottom:-3px;
+  left:0;
+  transition: 1.5s;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.nav .links ul li a:hover::before{
+  width:100%;
+}
+.mobile_links{
+  height:100vh;
+  width:100%;
+  background:#011e2c;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  z-index:1;
+  top:-100vh;
+  right:0;
+  transition: .5s;
+}
+.mobile_links ul{
+  height:400px;
+  width:100%;
+  background:#011e2c;
+  display:inline;
+  align-items:center;
+  justify-content:space-between;
+  list-style: none;
 }
 
-.logo img {
-    height: 40px;
+.mobile_links ul li{
+  text-align:center;
+  width:100%;
+  margin-bottom: 15px;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 2em;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 45px; /* Changed from right: 15px to left: 15px */
-    transform: translateY(-50%);
+.mobile_links ul li a{
+  color:white;
+  margin-left:15px;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+  cursor:pointer;
+  font-family:"Times New Roman";
+  position:relative;
+  text-align:center;
+  margin-bottom:15px;
+  width:100%;
+}
+.mobile_links ul li a::before{
+  content:" ";
+  background:#16C95F;
+  height:3px;
+  width:0;
+  position:absolute;
+  bottom:-3px;
+  left:0;
+  transition: 1.5s;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+.mobile_links ul li a:hover::before{
+  width:100%;
 }
 
-nav ul li {
-    margin: 0 1em;
+.menu_icon{
+  font-size:30px;
+  font-weight:bold;
+  color:white;
+  margin-right:15px;
+  display:none;
 }
 
-nav ul li a {
+header .download_section {
+  height:500px;
+  width:100%;
+    background:#011e2c;
     color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #ff6f61;
-    color: #fff;
-}
-
-section {
-    padding: 2em;
+    padding: 20px 0;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 1em;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; /* Adjust margin to avoid overlap with fixed navbar */
+  display:inline-block;
+  position:relative;
+  padding-top:30px;
 }
 
-section h2 {
-    color: #ff5733;
+header h1 {
+  margin-top:50px;
+    margin-bottom: 50px;
+  font-size:60px;
+  font-family: 'serif';
+ color: #2196F3;
+}
+header h1 span:nth-child(1){
+  font-size:60px;
+  font-family: 'serif';
+  color: #28CC03;
+}
+header h1 span:nth-child(2){
+  font-size:60px;
+  font-family: 'serif';
+  color: red;
+}
+header h1 span:nth-child(3){
+  font-size:60px;
+  font-family: 'serif';
+  color: orange;
+}
+header h1 span:nth-child(4){
+  font-size:60px;
+  font-family: 'serif';
+  color:skyblue ;
+}
+header h1 span:nth-child(5){
+  font-size:60px;
+  font-family: 'serif';
+  color:whitesmoke;
 }
 
-.btn{
-    padding: 1em 2em;
-    background-color: #28a745;
+
+header p {
+    margin-bottom: 60px;
+  font-size:18px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.download-buttons img {
+    width: 250px;
+  border-radius:10px;
+  display:flex;
+  justify-content: space-between;
+}
+
+
+footer .container{
+    background: #012529;
     color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    border-radius: 5px;
-    text-decoration:none;
+    padding: 10px 0;
+    text-align: center;
+  height:auto;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faq {
-    margin: 1em 0;
-}
-
-.faq h3 {
-    cursor: pointer;
-    transition: color 0.3s;
-    color: #007bff;
-}
-
-.faq h3:hover {
-    color: #0056b3;
-}
-
-.faq p {
-    display: none;
-    margin-top: 0.5em;
-    color: #333;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 1em;
-    border-radius: 5px;
-}
-
-/* Slider Styles */
-.slider-container {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 1.5em; /* Increased padding */
-    font-size: 1.5em; /* Increased font-size */
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-    }
-
-    nav ul.show {
-        max-height: 500px; /* Arbitrary value, adjust based on your content */
-        opacity: 1;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
-    }
-
-    .video-container {
-        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
-    }
-
-    .slider-container {
-        width: 100%;
-    }
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-.social-icon {
-    margin: 0 1em;
-    font-size: 2em;
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.2);
-}
-
-.youtube {
-    color: #FF0000;
-}
-
-.telegram {
-    color: #0088cc;
-}
