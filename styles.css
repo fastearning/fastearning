@@ -8,7 +8,6 @@
   height:98vh;
   width:100%;
   background:#011e2c;
-  padding-top:400px;
 }
 .nav{
   height: 100px;
@@ -29,6 +28,7 @@
 .apklogo{
   height:350px;
   width:350px;
+  margin-top:400px;
 }
 #image{
   height: 75px;
