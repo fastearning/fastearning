@@ -233,3 +233,87 @@ footer .container{
   align-items: center;
 }
 
+#desktop{
+  display:block;
+}
+
+#desktop{
+  height:100vh;
+  width:100%;
+  background:red;
+  z-index:100000;
+  position:fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+#desktop .desk_logo{
+  height:100vh;
+  width:100%;
+  background: black;
+  display: inline;
+  justify-content: center;
+  align-items:center;
+  color:white;
+  text-align:center;
+  padding-top:45%;
+}
+.desk_logo img{
+  height:300px;
+  width:300px;
+  margin-bottom: 100px;
+  
+}
+.desk_logo h1{
+  font-size:60px;
+  font-weight: bold;
+  font-family:serif;
+  
+}
+#desktop{
+  display:block;
+}
+
+#desktop{
+  height:100vh;
+  width:100%;
+  background:red;
+  z-index:100000;
+  position:fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+#desktop .desk_logo{
+  height:100vh;
+  width:100%;
+  background: black;
+  display: inline;
+  justify-content: center;
+  align-items:center;
+  color:white;
+  text-align:center;
+  padding-top:45%;
+}
+.desk_logo img{
+  height:300px;
+  width:300px;
+  margin-bottom: 100px;
+  
+}
+.desk_logo h1{
+  font-size:60px;
+  font-weight: bold;
+  font-family:serif;
+  
+}
