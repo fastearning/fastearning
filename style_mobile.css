@@ -68,9 +68,9 @@
 
 header h1 {
     margin-bottom: 20px;
-  font-size:35px;
+  font-size:30px;
   font-family: 'serif';
- color: #2196F3;
+ color:#00FF0A;
 }
   header h1 span:nth-child(1){
   font-size:30px;
