@@ -213,7 +213,19 @@ background: #021E22;
   height:45px;
   width:75%;
   transform: translateX(-50%);
+  animation:shake .5s linear infinite;
     
+}
+@keyframes shake{
+  0%{
+    transform:translateX(0px);
+  }
+  50%{
+    transform:translateX(10px);
+  }
+  100%{
+    transform:translateX(-10px);
+  }
 }
 
 footer {
