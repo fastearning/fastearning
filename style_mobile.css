@@ -3,7 +3,7 @@
   height:98vh;
   width:100%;
   background:#011e2c;
-  padding-top:70px;
+  padding-top:130px;
 }
   
   .nav{
@@ -12,17 +12,13 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background:#012529;
+  background:aqua;
 }
   
   .logo{
   height:50px;
   width:50px;
-}
-  .apklogo{
-  height:150px;
-  width:150px;
-}
+  }
 #image{
   height: 50px;
   width:50%;
@@ -55,76 +51,14 @@
   margin-right:10px;
   display:block;
 }
-  
-  header .download_section{
-  height:350px;
-  width:100%;
-    background: #011e2c;
-    color: white;
-    padding: 20px 0;
+  footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    
-}
-
-header h1 {
-    margin-bottom: 20px;
-  font-size:30px;
-  font-family: 'serif';
- color:#00FF0A;
-}
-  header h1 span:nth-child(1){
-  font-size:30px;
-}
-  header h1 span:nth-child(2){
-  font-size:30px;
-}
-   header h1 span:nth-child(3){
-  font-size:30px;
-}
-   header h1 span:nth-child(4){
-  font-size:30px;
-}
-   header h1 span:nth-child(5){
-  font-size:30px;
-}
-  
-
-header p {
-    margin-bottom: 60px;
-}
-
-.download-buttons a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.download-buttons img {
-    width: 150px;
-  border-radius:10px;
-  display:flex;
-  justify-content: space-between;
-}
-  footer{
-    background: #012529;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  height:auto;
   width:100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-    position:fixed;
-    bottom:0;
-    left:0;
+  height:65px;
+}
+footer .container{
+  height:65px;
 }
   
-
-#desktop{
-  display:none;
-}
-  
-  
-  
-}
-
