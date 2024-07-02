@@ -138,7 +138,7 @@ body {
     margin: 0;
     padding-top:100px;
     box-sizing: border-box;
-background: #011e2c;
+background:linear-gradient(to top,#072001,#010304,#021E22);
 }
 
 .container {
@@ -148,7 +148,7 @@ background: #011e2c;
 
 
 .banner {
-    background: #011e2c;
+    background: transparent;
     padding: 2em 0;
     text-align: center;
   height:65vh;
@@ -160,16 +160,9 @@ background: #011e2c;
     height: auto;
 }
 
-.banner .btn-primary {
-    background: #4CAF50;
-    color: #fff;
-    padding: 0.5em 2em;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
 .promo {
-    background: #ffeb3;
+    background: transparent;
     text-align: center;
   height:20vh;
   background:aqua;
@@ -179,7 +172,7 @@ background: #011e2c;
 }
 .promo .container{
   height:15vh;
-  background:linear-gradient(to bottom,#011e2c,aqua);
+  background: transparent;
   width:100%;
 }
 .promo .container h2, .promo .container p{
@@ -208,7 +201,7 @@ background: #011e2c;
 }
 
 footer {
-    background: #FFE500;
+    background:#012529;
     color: #fff;
     text-align: center;
   width:100%;
@@ -217,7 +210,7 @@ footer {
 footer .container{
   height:65px;
   width:100%;
-  background:red;
+  background:#012529;
   display: flex;
   justify-content: center;
   align-items: center;
