@@ -236,4 +236,40 @@ h1{
 .banner .container p{
   color:aqua;
 }
+.desktop{
+  display:block;
+}
+.desktop{
+  height:100vh;
+  width:100%;
+  display:inline;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 100000;
+  background:#011e2c;
+  text-align: center;
+}
+.desktop div{
+  height:50vh;
+  width:100%;
+  background:transparent;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0  5rem;
+}
+.desktop div img{
+  height:500px;
+  width:500px;
+  border-radius: 50%;
+}
+.desktop  h1{
+  font-size:55px;
+  text-align:center;
+  color:aqua;
+  font-weight: bold;
+}
+
+
 
