@@ -1,10 +1,5 @@
 @media (max-width: 768px) {
-  #container{
-  height:98vh;
-  width:100%;
-  background:#011e2c;
-  padding-top:130px;
-}
+  
   
   .nav{
   height: 70px;
@@ -12,7 +7,8 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  color:#012529;
+  color:#16C95F;
+    
 }
   
   .logo{
