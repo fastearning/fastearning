@@ -213,18 +213,19 @@ background: #021E22;
   height:45px;
   width:75%;
   transform: translateX(-50%);
-  animation:shake .5s linear infinite;
+  animation:shake .3s linear infinite;
+  transition:3s ease in;
     
 }
 @keyframes shake{
   0%{
-    transform:translateX(0px);
+    left:50%;
   }
   50%{
-    transform:translateX(10px);
+    left:51%;
   }
   100%{
-    transform:translateX(-10px);
+    left:50%;
   }
 }
 
