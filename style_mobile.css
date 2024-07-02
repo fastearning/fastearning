@@ -61,4 +61,7 @@
 footer .container{
   height:65px;
 }
+  .desktop{
+    display:none;
+  }
   
