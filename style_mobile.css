@@ -64,5 +64,11 @@ footer .container{
   .desktop{
     display:none;
   }
+
+  @font-face{
+    font-family:appFont;
+    src:url(appfont2_bold.ttf),
+      url(appfont2_regular.ttf);
+  }
   
 }
