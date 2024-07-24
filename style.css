@@ -273,7 +273,7 @@ h1{
   text-align: center;
 }
 .desktop div{
-  height:300px;
+  height:500px;
   width:100%;
   background:transparent;
   display:flex;
@@ -294,7 +294,7 @@ h1{
   font-family:QolorBold;
 }
 .desktop  p{
-  margin-top:20px;
+  margin-top:40px;
   font-size:35px;
   text-align:center;
   color:aqua;
