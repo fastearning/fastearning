@@ -273,7 +273,7 @@ h1{
   text-align: center;
 }
 .desktop div{
-  height:70vh;
+  height:300px;
   width:100%;
   background:transparent;
   display:flex;
