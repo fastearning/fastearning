@@ -207,7 +207,7 @@ background: #021E22;
   font-family:QolorBold;
   border-radius: 50px;
   position:fixed;
-  z-index:2;
+  z-index:100000001;
   bottom:65px;
   left:50%;
   height:45px;
